@@ -15,6 +15,7 @@ void task_a () {
    totalvotes++;
    votes1++;
    foo.unlock();
+   usleep(1);
   }
 }
 
@@ -24,6 +25,7 @@ void task_b () {
    totalvotes++;
    votes2++;
    foo.unlock();
+   usleep(1);
   }
 }
 
